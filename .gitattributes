@@ -1,0 +1,123 @@
+# Hopefully catch most files we care about
+*         text=auto
+
+# These files are text and should be normalized (convert crlf > lf)
+*.txt     text
+*.bbk     text
+*.cmake   text
+*.css     text
+*.dtd     text
+*.htm     text diff=html
+*.html    text diff=html
+*.ini     text
+*.log     text
+*.mak     text
+*.qbk     text
+*.rst     text
+*.sql     text
+*.txt     text
+*.xhtml   text diff=html
+*.xml     text
+*.xsd     text
+*.xsl     text
+*.xslt    text
+*.xul     text
+*.yml     text
+*.rss     text
+README    text
+*.conf    text
+
+# Code formats
+*.cs      text diff=csharp
+*.xaml    text
+*.vcproj  merge=union
+*.vbproj  merge=union
+*.csproj  merge=union
+*.sln     eol=crlf merge=union
+*.tt      text
+*.ps1     text
+*.cmd     text
+*.msbuild text
+*.md      text
+*.bat     text
+*.cmd     text
+*.js      text
+*.json    text
+*.css     text
+*.php     text diff=php
+*.inc     text diff=php
+*.pl      text diff=perl
+*.pm      text diff=perl
+*.py      text diff=python
+*.sh      text
+*.c       text diff=cpp
+*.cpp     text diff=cpp
+*.h       text diff=cpp
+*.hpp     text diff=cpp
+*.ipp     text
+*.tpp     text
+*.jam     text
+*.java    text diff=java
+*.jsp     text
+*.m       text diff=objc
+*.mm      text diff=objcpp
+*.sql     text
+*.properties text
+.htaccess text
+*.tex     text diff=tex
+*.md      text
+*.go      text
+*.rb      text diff=ruby
+*.y       text
+*.rc      text
+
+
+# Images should be treated as binary
+# (binary is a macro for -text -diff)
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.bmp     binary
+*.gif     binary
+*.ico     binary
+*.tif     binary
+*.tiff    binary
+*.svg     text
+
+
+
+# data formats
+*.pdf     binary
+*.avi     binary
+*.doc     binary
+*.dsp     binary
+*.dsw     binary
+*.eps     binary
+*.gz      binary
+*.mov     binary
+*.mp3     binary
+*.mp4     binary
+*.mkv     binary
+*.flv     binary
+*.ppt     binary
+*.ps      binary
+*.psd     binary
+*.rdf     binary
+*.rtf     binary
+*.swf     binary
+*.tgz     binary
+*.wav     binary
+*.xls     binary
+*.zip     binary
+*.7z      binary
+*.ttf     binary
+*.otf     binary
+*.rar     binary
+*.pyc     binary
+
+*.class   binary
+*.dll     binary
+*.ear     binary
+*.jar     binary
+*.so      binary
+*.war     binary
